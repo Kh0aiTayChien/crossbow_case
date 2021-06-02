@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    tr{
+        color: red;
+        width: 10px;
+        height: 10px;
+    }
+    th{
+        height: 10px;
+        width: 10px;
+    }
+    body {
+        /*background-image: url("https://lh3.googleusercontent.com/-is1zyWF7u_VMcFv4DwQPTmYD-A-M6OP7iu5tefKCgOaXkyQvfX3_7U59z8uyp5Q-YrEuT7uF8q8tHQrEHxxY-oVKT7qHX_vOyS1b3JAPCrksGWeAvptmaCLWHyL7YwWohFFDEo9lA=w2400");*/
+        /*background-image: url("https://media.giphy.com/media/d2Z0qmyBDG4WgnNC/giphy.gif") ;*/
+        /*background-image: url("https://media.giphy.com/media/26xBIEHXHovjbUfmw/giphy.gif");*/
+        background-image: url("https://media.giphy.com/media/Z61gwKI72Gx2g/giphy.gif");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+</head>
+<body onkeypress="music1()" >
+<audio id="themes" src="sound/nhacmain.mp3"></audio>
+<img id="anh1" src="https://media.giphy.com/media/26xBIEHXHovjbUfmw/giphy.gif" style="display: none">
+<script>
+    function music1() {
+        let audio = document.getElementById("themes");
+        audio.play();
+    }
+</script>
+<img id="crossbowimg" src="pictures/crossbow.png" style="display: none">
+<img id="arrowimg" src="pictures/arrow.png" style="display: none"/>
+<audio id='fly' src="sound/arrow%20strike%20fly.mp3"></audio>
+<audio id='target' src="sound/arrow%20strike%20target.mp3"></audio>
+
+<table id="info" border="0" cellspacing="5">
+    <tr>
+    <th>SCORE: </th><th id="score"></th><th> ARROWS:</th><th id="numar"></th>
+    <th>SPEED </th><th id="speed"></th><th>LEVEL</th><th id="level"></th>
+    </tr>
+</table>
+<canvas id="game" width="1300" height="600" style="border: 0px"></canvas>
+<script src="js/Const.js"></script>
+<script src="js/Target.js"></script>
+<script src="js/Crossbow.js"></script>
+<script src="js/Arrow.js"></script>
+<script src="js/Play.js"></script>
+
+
+
+</body>
+</html>
