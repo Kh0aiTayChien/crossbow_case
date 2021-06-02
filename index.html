@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Game</title>
+    <style>
+        body {
+            background-image: url("https://lh3.googleusercontent.com/oNM7AJZgD7iV6lYo4J7kB6mCOgtihM3Nre2kM5EyhGd6lXRh7LWj0BuRTfTZVF9nvaTCyJC5Vsvv1POQFlmM_t4VNq8lu7gkKXfANvmb07EesYkHtDhe-oezDvKMxJ8DmhpdxIag0g=w2400");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        table {
+            margin-right: 150px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body onmouseover="music()">
+<audio id="themes1" src="sound/wiithemes.mp3"></audio>
+<script>
+    function music() {
+        let audio = document.getElementById("themes1");
+        audio.play();
+    }
+</script>
+<br><br><br><br><br><br>
+<h1 align="center"> </h1>
+<table align="center">
+    <tr>
+        <th id="hd" rowspan="3" style="font-size: x-large; color: white">
+
+        </th>
+        <th rowspan="3" style="width: 500px"> </th>
+        <th>
+            <input id="choi" type="image"
+                   src="https://lh3.googleusercontent.com/nVHZDVz-POMTbUdDxTlt5GiZ7Ju-Fv3UbUun4GtWzB0ENn0dwA6O6tN1oNHW6PE3b6pqn4tzxJ78b5yOI9w3wp7DNy1Ohw5w3AE1zrWU-F3PLqIu7KWhzLBq2NqBThnHzvs0NV6n5Q=w400"
+                   alt="Chơi" onmouseover="changeImage()" onmouseout="changeImage()" onclick="letplay()"/>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <input id="huongdan" type="image"
+                   src="https://lh3.googleusercontent.com/Z1Oy29jHSOt5Oc-co1bQQnJL03dA_w9DNus2FpRLZ1GfaYtKYalbvmG0OrLMWn56f3IkVSpAbffKVelBv_U07yrsyDQtS9o_cre7NXzOxq-fIJSmiWVm2w8zOBQ4UF-Ad_myQffsoQ=w400"
+                   alt="Hướng dẫn" onmouseover="changeImage1()" onmouseout="changeImage1()" onclick="huongdan()"/>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <input id="thoat" type="image"
+                   src="https://lh3.googleusercontent.com/U2bqOE9w1KOmsuEFLO-heNH6WpSKpFr0PTBKVS1pJJ-kWWHq5hk7ZMww7j35Y3oC0BwK5z2GOw1EFLwpFAXI0C5T7UNIQDToNDH8zWbc5WI5pvh35sM3LUoapIkj_OQruDuDxGcZPg=w400"
+                   alt="Thoát" onmouseover="changeImage2()" onmouseout="changeImage2()"/>
+        </th>
+    </tr>
+</table>
+
+<script>
+    function changeImage() {
+
+        if (document.getElementById("choi").src == "https://lh3.googleusercontent.com/nVHZDVz-POMTbUdDxTlt5GiZ7Ju-Fv3UbUun4GtWzB0ENn0dwA6O6tN1oNHW6PE3b6pqn4tzxJ78b5yOI9w3wp7DNy1Ohw5w3AE1zrWU-F3PLqIu7KWhzLBq2NqBThnHzvs0NV6n5Q=w400") {
+            document.getElementById("choi").src = "https://lh3.googleusercontent.com/BMmV4ClsHrf1IS5yRvksD-kuaP2bZlFoRs7TbJzagQkL2PSQUSix0Acu-g3JSdVqbNBFUyRumlkzAfw2ZiTOUovKA6QZYcHgHQNw_9v9Cx_cPb7KdvSVBpOBOOeF4JjvL9957Mo-Lg=w400";
+        } else {
+            document.getElementById("choi").src = "https://lh3.googleusercontent.com/nVHZDVz-POMTbUdDxTlt5GiZ7Ju-Fv3UbUun4GtWzB0ENn0dwA6O6tN1oNHW6PE3b6pqn4tzxJ78b5yOI9w3wp7DNy1Ohw5w3AE1zrWU-F3PLqIu7KWhzLBq2NqBThnHzvs0NV6n5Q=w400";
+        }
+    }
+
+    function changeImage1() {
+
+        if (document.getElementById("huongdan").src == "https://lh3.googleusercontent.com/Z1Oy29jHSOt5Oc-co1bQQnJL03dA_w9DNus2FpRLZ1GfaYtKYalbvmG0OrLMWn56f3IkVSpAbffKVelBv_U07yrsyDQtS9o_cre7NXzOxq-fIJSmiWVm2w8zOBQ4UF-Ad_myQffsoQ=w400") {
+            document.getElementById("huongdan").src = "https://lh3.googleusercontent.com/3uTkU0DAgQb9P90zRP8F5GQ2f9VFabpYXuAOsGeS33jU77uRTM4Q7WWezv7jIM33mckT-vlTK3iKOYrT2f0_s2KHQ59RqFL3BSwrexV8i-blEHga8qL642yN9KhaI-fnrfsG0R2rog=w400";
+        } else {
+            document.getElementById("huongdan").src = "https://lh3.googleusercontent.com/Z1Oy29jHSOt5Oc-co1bQQnJL03dA_w9DNus2FpRLZ1GfaYtKYalbvmG0OrLMWn56f3IkVSpAbffKVelBv_U07yrsyDQtS9o_cre7NXzOxq-fIJSmiWVm2w8zOBQ4UF-Ad_myQffsoQ=w400";
+        }
+    }
+
+    function changeImage2() {
+
+        if (document.getElementById("thoat").src == "https://lh3.googleusercontent.com/U2bqOE9w1KOmsuEFLO-heNH6WpSKpFr0PTBKVS1pJJ-kWWHq5hk7ZMww7j35Y3oC0BwK5z2GOw1EFLwpFAXI0C5T7UNIQDToNDH8zWbc5WI5pvh35sM3LUoapIkj_OQruDuDxGcZPg=w400") {
+            document.getElementById("thoat").src = "https://lh3.googleusercontent.com/rJLue_EQCnX1xuVAd-e4Y95vJ6fkVHF2ODIyU1HfMu6VgBF2OTAZT8KfjRxbcaAEAmCmL_y5PXXx5__ExUP5aZoscPG0pEYdlWQxu1JCzQ6cB56DFkfBeCex9_KF6H_81gk8W1e2QQ=w400";
+        } else {
+            document.getElementById("thoat").src = "https://lh3.googleusercontent.com/U2bqOE9w1KOmsuEFLO-heNH6WpSKpFr0PTBKVS1pJJ-kWWHq5hk7ZMww7j35Y3oC0BwK5z2GOw1EFLwpFAXI0C5T7UNIQDToNDH8zWbc5WI5pvh35sM3LUoapIkj_OQruDuDxGcZPg=w400";
+        }
+    }
+    function huongdan(){
+        document.getElementById('hd').innerHTML = " Hướng dẫn chơi game:<br> <br>  Khi vào game bạn sẽ có 15 mũi tên và 4 LEVEL tất cả.\n" +
+            "            Các mốc LEVEL: <br> 0 - 40 - 80 điểm - 160 điểm<br>" +
+            "            <br>Qua mỗi LEVEL thì tốc độ của mũi tên sẽ giảm dần cho tới mức siêu chậm <br>" +
+            "            <br>Qua mỗi LEVEL bạn sẽ được thưởng thêm 05 mũi tên để tiếp tục chơi"
+            "            Ấn phím bất kì để mũi tên được bắn ra "
+
+    }
+
+    function letplay() {
+        window.location.href = "main.html";
+    }
+</script>
+
+
+</body>
+</html>
