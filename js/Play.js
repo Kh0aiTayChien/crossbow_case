@@ -109,7 +109,8 @@ function move() {
 
 }
 
-
+window.addEventListener("click", creatarrow );
+window.addEventListener("click", playfly);
 window.addEventListener("keypress", creatarrow );
 window.addEventListener("keypress", playfly);
 setInterval(move, 10);
